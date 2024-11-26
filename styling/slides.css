@@ -1,0 +1,71 @@
+<style>
+
+#title-slide .title {
+        font-size: 2.75em;
+        color: #eb8f34;
+      }
+
+/* Default font size */
+.slides {
+    font-size: 0.75em;
+    font-family: arial;
+}
+
+/* Ensure text fits within the slide if content is too big */
+.slides.fit-text {
+    font-size: calc(0.75em + (0.5em - 0.75em) * ((100vw - 20em) / (100em - 20em)));
+    line-height: 1.2;
+}
+
+/* Make sure UL and OL are displayed as blocks */
+.reveal ul, .reveal ol {
+    display: block;
+}
+
+/* Limit the height of images */
+img {
+    max-height: 350px !important;
+}
+
+/* Styling for figure captions */
+figcaption {
+    font-size: 0.6em !important;
+    font-style: italic !important;
+}
+
+/* Italic styling for subtitles */
+.subtitle {
+    font-style: italic !important;
+}
+
+/* Styling for the date */
+.date {
+    font-size: 0.75em !important;
+}
+
+/* Add slide number at the bottom left */
+.reveal .slide-number {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.7em;
+    color: #888;
+}
+
+/* Add your name at the bottom right */
+.reveal .author-name {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.7em;
+    color: #888;
+    font-style: italic;
+}
+
+/* Dynamically adjust font-size to ensure content fits */
+@media screen and (max-height: 700px) {
+    .slides {
+        font-size: 0.6em;
+    }
+}
+</style>
